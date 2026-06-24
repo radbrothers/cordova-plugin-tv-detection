@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org"
+        id="cordova-plugin-tv-detection"
+        version="1.0.0">
+    <name>TvDetection</name>
+    <description>Cordova plugin to detect Android TV using Leanback feature check</description>
+    <license>MIT</license>
+
+    <!-- JavaScript Interface -->
+    <js-module src="www/TvDetection.js" name="TvDetection">
+        <clobbers target="window.TvDetection" />
+    </js-module>
+
+    <!-- Android Platform Configuration -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="TvDetectionPlugin">
+                <param name="android-package" value="com.example.plugin.tvdetection.TvDetectionPlugin"/>
+            </feature>
+        </config-file>
+
+        <!-- Путь, куда скопируется Kotlin файл при сборке проекта -->
+        <source-file src="src/android/TvDetectionPlugin.kt" target-dir="app/src/main/kotlin/com/example/plugin/tvdetection" />
+    </platform>
+</plugin>

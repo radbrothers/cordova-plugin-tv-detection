@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-tv-detection",
+  "version": "1.0.0",
+  "description": "Cordova plugin to detect Android TV using Leanback feature check",
+  "cordova": {
+    "id": "cordova-plugin-tv-detection",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com"
+  },
+  "keywords": [
+    "cordova",
+    "android",
+    "tv",
+    "androidtv",
+    "detection",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com"
+  },
+  "homepage": "https://github.com"
+}
